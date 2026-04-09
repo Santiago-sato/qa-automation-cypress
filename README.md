@@ -1,31 +1,48 @@
 # QA Automation Project - Cypress
 
-Proyecto de automatización de pruebas desarrollado con Cypress.
+Proyecto de automatización de pruebas desarrollado con Cypress aplicando buenas prácticas de testing automation.
 
-## Casos cubiertos
-- Login exitoso
-- Login con contraseña inválida
-- Validación de URL post-login
-- Verificación de elementos visibles
+---
 
-## Tecnologías usadas
+## Tecnologías utilizadas
 - Cypress
 - JavaScript
 - Node.js
 
-## 🎥 Demo
-![Demo](docs/demo.gif)
+---
 
-## Reporte de ejecución
-![Reporte QA](docs/reporte.png)
+## Funcionalidades Automatizadas
+- Login exitoso
+- Login inválido
+- Validación de mensajes de error
+- Verificación de URL post-login
+- Validación de elementos UI
+
+---
+
+## Buenas prácticas implementadas
+- Page Object Model (POM)
+- Custom Commands
+- Fixtures / Data Driven Testing
+- Reporter HTML (Mochawesome)
+- Captura de screenshots automática
+- Grabación de videos de ejecución
+
+---
+
+## Evidencias
+
+### Ejecución automatizada
+![Demo Cypress](docs/demo.gif)
+
+### Reporte HTML
+![Reporte](docs/report.png)
+
+---
 
 ## Instalación
-npm install
+1. npm install
+2. npx cypress open
 
-## Ejecutar tests
-npx cypress open
-# o
-npx cypress run
-
-## Autor - Santiago Quintero Tapasco
-Proyecto desarrollado como práctica de automatización QA con Cypress.
+## Autor 
+- Santiago Quintero Tapasco
