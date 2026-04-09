@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-09T05:07:55.054Z",
+    "end": "2026-04-09T05:08:03.271Z",
+    "duration": 8217,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d7bf298a-6797-4555-8de1-04d884be7981",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3f1f5503-822d-4e9a-98bc-96991b9d7d85",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Debe iniciar sesión correctamente",
+              "fullTitle": "Login Test Debe iniciar sesión correctamente",
+              "timedOut": null,
+              "duration": 4095,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername(_loginData.default.validUser.username);\nloginPage.enterPassword(_loginData.default.validUser.password);\nloginPage.clickSubmit();\ncy.url().should('include', '/logged-in-successfully/');",
+              "err": {},
+              "uuid": "9d30c71f-91d2-47df-b099-e182b6b2a243",
+              "parentUUID": "3f1f5503-822d-4e9a-98bc-96991b9d7d85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe mostar error si la contraseña es incorrecta",
+              "fullTitle": "Login Test Debe mostar error si la contraseña es incorrecta",
+              "timedOut": null,
+              "duration": 2078,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername(_loginData.default.invalidUser.username);\nloginPage.enterPassword(_loginData.default.invalidUser.password);\nloginPage.clickSubmit();\ncy.contains('Your password is invalid!');",
+              "err": {},
+              "uuid": "29429801-0911-4c3b-b0a3-bc39361bc4d5",
+              "parentUUID": "3f1f5503-822d-4e9a-98bc-96991b9d7d85",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d30c71f-91d2-47df-b099-e182b6b2a243",
+            "29429801-0911-4c3b-b0a3-bc39361bc4d5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6173,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

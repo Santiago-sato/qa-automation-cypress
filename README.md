@@ -14,7 +14,10 @@ Proyecto de automatización de pruebas desarrollado con Cypress.
 - Node.js
 
 ## 🎥 Demo
-![Demo](docs/demo.gif)
+![Demo](videos/login.cy.js.mp4)
+
+## Reporte de ejecución
+![Reporte QA](docs/reporte.png)
 
 ## Instalación
 npm install

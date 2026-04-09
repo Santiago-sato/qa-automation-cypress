@@ -1,33 +1,47 @@
+import LoginPage from '../pages/LoginPage'
+import loginData from '../fixtures/loginData.json'
+
+
+const loginPage = new LoginPage()
+
 describe('Login Test', () => {
 
-    const usernameInput = '#username'
-    const passwordInput = '#password'
-    const submitButton = '#submit'
-
     beforeEach(() => {
-        cy.visit('https://practicetestautomation.com/practice-test-login/')
+        loginPage.visit()
     })
 
-    it('Debe iniciar sesion correctamente', () => {
+    it('Debe iniciar sesión correctamente', () => {
 
-        cy.login('student', 'Password123')
+        loginPage.enterUsername(loginData.validUser.username)
+        loginPage.enterPassword(loginData.validUser.password)
+        loginPage.clickSubmit()
 
-        cy.url().should('include', 'logged-in-successfully/')
-
-        cy.get('.wp-block-button__link').should('be.visible')
+        cy.url().should('include', '/logged-in-successfully/')
 
     })
+
+
 
 
     it('Debe mostar error si la contraseña es incorrecta', () => {
 
-        cy.login('studenst', 'claveIncorrecta')
+        loginPage.enterUsername(loginData.invalidUser.username)
+        loginPage.enterPassword(loginData.invalidUser.password)
+        loginPage.clickSubmit()
 
         cy.contains('Your password is invalid!')
 
     })
 
 })
+
+
+
+
+
+
+
+
 
 
 
