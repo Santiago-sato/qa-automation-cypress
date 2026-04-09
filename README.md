@@ -13,6 +13,9 @@ Proyecto de automatización de pruebas desarrollado con Cypress.
 - JavaScript
 - Node.js
 
+## 🎥 Demo
+![Demo](docs/demo.gif)
+
 ## Instalación
 npm install
 
