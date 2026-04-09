@@ -21,5 +21,5 @@ npx cypress open
 # o
 npx cypress run
 
-## Autor
+## Autor - Santiago Quintero Tapasco
 Proyecto desarrollado como práctica de automatización QA con Cypress.
