@@ -12,3 +12,14 @@ Proyecto de automatización de pruebas desarrollado con Cypress.
 - Cypress
 - JavaScript
 - Node.js
+
+## Instalación
+npm install
+
+## Ejecutar tests
+npx cypress open
+# o
+npx cypress run
+
+## Autor
+Proyecto desarrollado como práctica de automatización QA con Cypress.
